@@ -15,11 +15,11 @@ public class ArriendoLocalComida extends Arriendo {
     private double valorAgua;
     private double iva;
     
-    public ArriendoLocalComida(String nombre, double cuotaB){
+    public ArriendoLocalComida(String nombre, double cuotaB){ // pasarela donde se llama el constructor de la super clase 
         super(nombre, cuotaB);
     }
     
-    public ArriendoLocalComida(String nombre, double cuotaB, double vl, 
+    public ArriendoLocalComida(String nombre, double cuotaB, double vl, //parametros
             double va, double iv){
         super(nombre, cuotaB);
         valorAgua = va;
@@ -38,7 +38,7 @@ public class ArriendoLocalComida extends Arriendo {
     public void establecerIva(double x){
         iva = x;
     }
-    
+    // generar un establecer en funcion de las carecteristicas dadas para sacar el arriendoMensual
     @Override
     public void establecerArriendoMensual(){
         double subtotal = obtenerValorAgua() + obtenerValorLuz() + 

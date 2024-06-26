@@ -17,7 +17,7 @@ import paquete2.Arriendo;
 public class Ejecutor {
     
     public static void main(String[] args) {
-        ArrayList<Arriendo> listaArriendos = new ArrayList<>();
+        ArrayList<Arriendo> listaArriendos = new ArrayList<>(); // cuando se crea un arrayList y se guardan las clases de arriendo 
         
         ArriendoLocalComida arriendoComida = new ArriendoLocalComida(
                 "Christian Shepherd", 300);
@@ -41,12 +41,15 @@ public class Ejecutor {
         arriendoSesiones.establecerValorAmplificacion(20); // en $
         
         listaArriendos.add(arriendoComida);
+        listaArriendos.add(arriendoComida2);
         listaArriendos.add(arriendoComercial);
         listaArriendos.add(arriendoSesiones);
         
         for (int i = 0; i < listaArriendos.size(); i++) {
-            listaArriendos.get(i).establecerArriendoMensual(); // se llama al 
-                                                            // métodos abstracto
+            listaArriendos.get(i).establecerArriendoMensual();
+            // es un objecto de un subclase de arriendo 
+            // código recorre todos los elementos de lista arriendos  y llama establecerArriendoMensual en todos ellos
+//.****// se llama al métodos abstracto
             System.out.println(listaArriendos.get(i));
             System.out.println();
         }
