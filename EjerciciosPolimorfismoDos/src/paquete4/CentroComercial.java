@@ -32,7 +32,7 @@ public class CentroComercial {
         arriendos = lista;
     }
 
-    public void establecerTotalArriendosFinalMensual() {
+    public void establecerTotalArriendosFinalMensual() { // no resive nada por esta trabajando con los datos que esta ahi trabajando 
         for (int i = 0; i < obtenerArriendos().size(); i++) {
             totalArriendosFinalMensual = totalArriendosFinalMensual
                     + obtenerArriendos().get(i).obtenerArriendoMensual();
@@ -42,7 +42,8 @@ public class CentroComercial {
     public void establecerTotalArriendosBaseMensual() {
         for (int i = 0; i < obtenerArriendos().size(); i++) {
             totalArriendosBaseMensual = totalArriendosBaseMensual
-                    + obtenerArriendos().get(i).obtenerCuotaBase();
+                    + obtenerArriendos().get(i).obtenerCuotaBase(); 
+                    // no se sabe es de una subclase
         }
     }
 
