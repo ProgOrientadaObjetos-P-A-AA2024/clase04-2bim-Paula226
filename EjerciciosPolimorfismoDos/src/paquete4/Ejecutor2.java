@@ -97,5 +97,7 @@ public class Ejecutor2 {
         centro.establecerTotalArriendosBaseMensual();
         centro.establecerTotalArriendosFinalMensual();
         System.out.println(centro);
+        //holaaaaaaaaaaaaaaaaaaa
+        
     }
 }
